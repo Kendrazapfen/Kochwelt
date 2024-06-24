@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_media.css">
+    <link rel="stylesheet" href="style-ufuk.css">
+    <link rel="stylesheet" href="style_start.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Gotu&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header_daily_recipe.html"></div>
+
+    <div>
+        <div class="recipe-continer mobile-view-sektion-head-img">
+            <h1 class="h1-mobile">Künefe</h1>
+            <img class="img-setup img-mobile" src="img/kunefe.jpg" alt="">
+        </div>
+        <div class="recipe-infobar mobile-view-infobar">
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                60 Min.
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/brain-2-16.png" alt=""></i>
+                Simpel
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/date-to-16.png" alt=""></i>
+                25.02.2023
+            </span>
+
+            <hr class="line-setup line-setup-mobile">
+
+            <div class="ingredients-list mobile-view-ingr">
+                <span class="ingredients-header ingr-header-mobile">Zutaten für</span>
+                <div class="button-container buten-container-mobile">
+                    <input id="portions" type=number min="1" class="ingredients-factor ingredients-factor-mobile"
+                        placeholder="1">
+                    <button onclick="calculate()" class="button button-mobile">Portion</button>
+                </div>
+            </div>
+
+            <div>
+                <table class="table-setup table-setup-mobile-view">
+                    <tbody>
+                        <tr>
+                            <td class="grey-row-kunefe grey-row-kunefe-mobile">
+
+                                <span id="amount_first" class="span-padding">50 Gramm</span>
+                                <span>Tel -Kadayif ; türkische Fadennudeln</span>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="white-row-kunefe white-row-kunefe-mobile">
+                                <span id="amount_second" class="span-padding">50 Gramm</span>
+                                <span>Büffelmozzarella</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="grey-row-kunefe grey-row-kunefe-mobile">
+                                <span id="amount_third" class="span-padding">20 Gramm</span>
+                                <span>Margarine oder Butter</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table-setup">
+                    <tbody>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h3>Für den Sirup:</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="grey-row-sirup grey-row-kunefe-mobile">
+                                <span id="amount_fourth" class="span-padding">10 Gramm</span>
+                                <span>Zucker</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="white-row white-row-kunefe-mobile">
+                                <span id="amount_fifth" class="span-padding">50 Milliliter</span>
+                                <span>Wasser</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="grey-row-sirup grey-row-kunefe-mobile">
+                                <span class="span-padding-special span-padding-special-mobile">Spritzer</span>
+                                <span>Zitronensaft</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div class="nutrition mobile-view-nutrition">
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view hide-nutrition"><b>Nährwertangaben:</b></div>
+                    <div class="kcal kcal-mobile hide-nutrition">Angaben pro 100g</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>kJ (kcal)</b></div>
+                    <div class="kcal-details kcal-details-mobile">1989 (475)</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Eiweiß</b></div>
+                    <div class="kcal-details kcal-details-mobile">9,8 g</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Kohlenhydrate</b></div>
+                    <div class="kcal-details kcal-details-mobile">1,2 g</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Fett</b></div>
+                    <div class="kcal-details kcal-details-mobile">48,6 g</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prepare-container mobile-view-prepare">
+            <h3>Zubereitung</h3>
+            <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                30 Minuten
+            </span>
+            <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                Gesamtzeit 60 Minuten
+            </span>
+            <div class="prepare-text">
+                <p class="prepare-text-mobile" >1. Zubereitung des Zuckersirups. Wasser und Zucker in einen Topf gegeben und zum
+                kochen bringen &#40ca. 10 Minuten&#41. Anschließend kommt ein spritzer Zitronensaft dazu. Nachdem der Sirup dann weitere 5 - 10 Minuten 
+                geköcheln hat, lässt man im Anschließend den Sirup kalt stellen.</p>
+
+               <p class="prepare-text-mobile" > 2. Die Teigfäden werden etwas kleingeschnitten und in eine Schüssel gegeben.
+                Hinzu kommt noch die geschmolzene Butter. Mit den Händen wird alles gut miteinander
+                verknetet. Dann werden die Kadayif Förmchen großzügig mit Butter eingefettet und eine erste Lage
+                Teigfäden darüber verteilt. Mit einem zweiten Schälchen drückt man die Teigfäden dann schön platt (sehr
+                wichtig) und der Mozzarella wird darüber verteilt. Anschließend kommt eine weitere Lage Teigfäden über
+                die Mozzarella und wird mit einem Schälchen ebenfalls gut platt gedrückt.</p>
+
+                <p class="prepare-text-mobile" >3. Anschließend werden die Kadayifs auf mittlerer Hitze auf dem Herd (am besten geht es auf einem Gasherd) von
+                der einen Seite goldbraun gebraten, dann gewendet und vor der anderen Seite ebenfalls goldbraun gebraten.</p>
+
+                <p class="prepare-text-mobile" >4. Dann kommt der zuvor kaltgestellte Zuckersirup auf die Künefe. Und wer möchte kann
+                    die Künefe mit Pistazien dekoriert. Guten Appetit.</P>
+            </div>
+        </div>
+
+        <div class="profile-header mobile-view-heder">
+            <span class="header-profile-mobile"><b>Rezept erstellt von</b></span>
+            
+        </div>
+
+        <div class="profile-name profile-name-mobile">
+            <img class="profile-img-setup profile-img-setup-mobile" src="img/Profil-Ufuk.jpg" alt="">
+            <span class="name-margin-top-40 name-margin-top-40-mobile" >Ufuk</span>
+        </div>
+        
+
+        <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

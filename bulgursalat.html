@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Veganer Bulgur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ufuk.css">
+    <link rel="stylesheet" href="style_media.css">
+    <link rel="stylesheet" href="style_start.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Gotu&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body onload="includeHTML(); createArray()">
+
+    <div w3-include-html="templates/header_daily_recipe.html"></div>
+
+    <div>
+        <div class="recipe-continer mobile-view-sektion-head-img">
+            <h1 class="h1">Bulgursalat</h1>
+            <img class="img-setup img-mobile" src="img/bulgur.jpg" alt="">
+        </div>
+        <div class="recipe-infobar mobile-view-infobar">
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                20 Min.
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/brain-2-16.png" alt=""></i>
+                Simpel
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/date-to-16.png" alt=""></i>
+                07.03.2023
+            </span>
+
+            <hr class="line-setup line-setup-mobile">
+
+            <div class="ingredients-list mobile-view-ingr">
+                <span class="ingredients-header ingr-header-mobile">Zutaten für</span>
+                <div class="button-container buten-container-mobile">
+                    <input id="portion-input" type="number" min="1" class="ingredients-factor ingredients-factor-mobile"
+                        placeholder="1" required>
+                    <button onclick="newIngredientAmount()" class="button button-mobile">Portion</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-segment table-segment-mobile table-setup-mobile-view">
+            <table>
+                <tr class="grey-row grey-row-kunefe-mobile">
+                    <td id="ingredient-amount0">150</td>
+                    <td>Gramm</td>
+                    <td class="full-width">Bulgur</td>
+                </tr>
+
+                <tr class="white-row white-row-kunefe-mobile">
+                    <td id="ingredient-amount1">80</td>
+                    <td>Gramm</td>
+                    <td class="full-width">Kirschtomaten</td>
+                </tr>
+
+                <tr class="grey-row grey-row-kunefe-mobile">
+                    <td id="ingredient-amount2">50</td>
+                    <td>Gramm</td>
+                    <td class="full-width">Frühlingszwiebeln</td>
+                </tr>
+
+                <tr class="white-row white-row-kunefe-mobile">
+                    <td id="ingredient-amount3">0.5</td>
+                    <td>Bund</td>
+                    <td class="full-width">Minze</td>
+                </tr>
+
+                <tr class="grey-row grey-row-kunefe-mobile">
+                    <td id="ingredient-amount4">1</td>
+                    <td>Teelöffel</td>
+                    <td class="full-width">Zitronensaft</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div>
+            <div class="nutrition mobile-view-nutrition">
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view hide-nutrition"><b>Nährwertangaben:</b></div>
+                    <div class="kcal kcal-mobile hide-nutrition">Angaben pro 100g</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>kJ (kcal)</b></div>
+                    <div class="kcal-details kcal-details-mobile">1140 (274)</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Eiweiß</b></div>
+                    <div class="kcal-details kcal-details-mobile">7,3 g</div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Kohlenhydrate</b></div>
+                    <div class="kcal-details kcal-details-mobile">53 g (4,8 g) </div>
+                </div>
+                <div>
+                    <div class="margin-bottom margin-bottom-mobile-view"><b>Fett</b></div>
+                    <div class="kcal-details kcal-details-mobile">1,1 g</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prepare-container mobile-view-prepare">
+            <h3>Zubereitung</h3>
+            <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                10 Minuten
+            </span>
+            <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile"
+                        src="img/clock-3-16.png" alt=""></i>
+                Gesamtzeit 20 Minuten
+            </span>
+            <div class="prepare-text prepare-text-mobile">
+                Frühlingszwiebeln, Tomaten und Minze waschen. Frühlingszwiebeln in Ringe schneiden, Kirschtomaten
+                vierteln und Minze-Blätter in Streifen schneiden. Bulgur in einem feinen Sieb unter fließendem Wasser
+                waschen. Anschließend Bulgur in 450ml Wasser unter Rühren aufkochen. Topf vom Herd nehmen und
+                Frühlingszwiebeln, Tomaten, Minze sowie Zitronensaft dazugeben. Abschließend durchmischen und 10 Minuten
+                ziehen lassen.
+            </div>
+        </div>
+
+        <div class="profile-header mobile-view-heder">
+            <span class="header-profile-mobile"><b>Rezept erstellt von</b></span>
+        </div>
+
+        <div class="profile-name profile-name-mobile">
+            <img class="profile-img-setup profile-img-setup-mobile" src="img/serhat_kaan_manisali_7x7h.jpg" alt="">
+            <span class="name-margin-top-40 name-margin-top-40-mobile" >Serhat</span>
+        </div>
+
+        <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

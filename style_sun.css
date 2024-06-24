@@ -1,0 +1,52 @@
+/* style for doerte_recipe after this */
+
+.table-setup {
+    width: 100%;
+}
+
+.grey-row-kunefe {
+    background-color: rgb(239, 237, 237);
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.white-row-kunefe {
+    background-color: white;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.grey-row-sirup {
+    background-color: rgb(239, 237, 237);
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.white-row {
+    background-color: white;
+    height: 40px;
+    font-size: 14px;
+}
+
+.span-padding {
+    padding-right: 30px;
+}
+
+.span-padding-special {
+    padding-left: 30px;
+    padding-right: 74px;
+}
+
+h3 {
+    display: flex;
+    margin-top: 50px;
+}
+.placeholder {
+    height: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+

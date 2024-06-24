@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt - Start</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+    <!--Bootstrap file-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_start.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div
+      class="template_mobile"
+      w3-include-html="templates/header_index.html"
+    ></div>
+    <div class="background_start">
+      <img src="img/background_start.jpg" class="header_image" />
+      <div class="header-content">
+        <h1>Unsere Kochwelt</h1>
+        <p>Köstlichkeiten aus 1001 Nacht!</p>
+        <a href="daily_recipe.html" class="daily_recipe_button"
+          >Rezept des Tages</a
+        >
+      </div>
+    </div>
+
+    <div class="cooks_section">
+      <h2>Unsere Hobbyköche</h2>
+    </div>
+    <div class="cooks_profile">
+      <div class="cooks_profile_box">
+        <img src="img/Profil-Ufuk.jpg" class="profile_picture" />
+        <h3 class="text_center">Ufuk</h3>
+        <div class="text_center text_gray">Cook</div>
+      </div>
+      <div class="cooks_profile_box">
+        <img src="img/serhat_kaan_manisali_7x7h.jpg" class="profile_picture" />
+        <h3 class="text_center">Serhat</h3>
+        <div class="text_center text_gray">
+          Der Döner-Connaisseur Ihres Vertrauens
+        </div>
+      </div>
+      <div class="cooks_profile_box">
+        <img src="img/doerte_foto.jpg" class="profile_picture" />
+        <h3 class="text_center">Dörte</h3>
+        <div class="text_center text_gray">Cook</div>
+      </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+  </body>
+</html>

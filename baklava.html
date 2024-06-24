@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Baklava</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ufuk.css">
+    <link rel="stylesheet" href="style_media.css">
+    <link rel="stylesheet" href="style_start.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header_daily_recipe.html"></div>
+    <div>
+        <div class="recipe-continer mobile-view-sektion-head-img">
+            <h1 class="h1-mobile">Baklava</h1>
+            <img class="img-setup img-mobile" src="img/sweets.jpg" alt="">
+        </div>
+        <div class="recipe-infobar mobile-view-infobar">
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons "><img class="icon-setup-mobile" src="img/clock-3-16.png" alt=""></i>
+                30 Min.
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons "><img class="icon-setup-mobile" src="img/brain-2-16.png" alt=""></i>
+                Simpel
+            </span>
+            <span class="setup-infobar setup-infobar-mobile-view"><i class="icons "><img class="icon-setup-mobile" src="img/date-to-16.png" alt=""></i>
+                05.03.2023
+            </span>
+
+            <hr class="line-setup line-setup-mobile">
+
+        <div class="ingredients-list mobile-view-ingr">
+            <span class="ingredients-header ingr-header-mobile">Zutaten für</span>
+            <div class="button-container buten-container-mobile">
+                <input id="portions" type=number min="1" class="ingredients-factor ingredients-factor-mobile" placeholder="1" required>
+                <button onclick="cal()" class="button button-mobile">Portion</button>
+            </div>
+        </div>
+
+        <div>
+            <table class="table-setup table-setup-mobile-view">
+                <tbody>
+                    <tr>
+                        <td class="grey-row-kunefe grey-row-kunefe-mobile">
+                            <span id="amount_one" class="span-padding">125 Gramm</span>
+                            <span>Filo- oder Strudelteigblätter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="white-row-kunefe white-row-kunefe-mobile">
+                            <span id="amount_two" class="span-padding">120 Gramm</span>
+                            <span>gehackte Pistazien</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="grey-row-kunefe grey-row-kunefe-mobile">
+                            <span id="amount_three" class="span-padding">120 Gramm</span>
+                            <span>gehackte Mandeln</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="white-row-kunefe white-row-kunefe-mobile">
+                            <span id="amount_four" class="span-padding">120 Gramm</span>
+                            <span>gehackte Walnüsse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="grey-row-kunefe grey-row-kunefe-mobile">
+                            <span id="amount_five" class="span-padding">1 Teelöffel</span>
+                            <span class="zimt">Zimt</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="white-row-kunefe white-row-kunefe-mobile">
+                            <span id="amount_six" class="span-padding">125 Gramm</span>
+                            <span>flüssige Butter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="grey-row-sirup grey-row-kunefe-mobile">
+                            <span id="amount_seven" class="span-padding">150 Gramm</span>
+                            <span>Zucker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="white-row white-row-kunefe-mobile">
+                            <span id="amount_eight" class="span-padding">70 Milliliter</span>
+                            <span class="water">Wasser</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="grey-row-sirup grey-row-kunefe-mobile">
+                            <span id="amount_nine" class="span-padding">50 Gramm</span>
+                            <span class="honey">Honig</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <div class="nutrition mobile-view-nutrition">
+            <div>
+                <div class="margin-bottom margin-bottom-mobile-view hide-nutrition"><b>Nährwertangaben:</b></div>
+                <div class="kcal kcal-details-mobile hide-nutrition">Angaben pro 100g</div>
+            </div>
+            <div>
+                <div class="margin-bottom margin-bottom-mobile-view"><b>kJ (kcal)</b></div>
+                <div class="kcal-details kcal-details-mobile" >1989 (475)</div>
+            </div>
+            <div>
+                <div class="margin-bottom margin-bottom-mobile-view"><b>Eiweiß</b></div>
+                <div class="kcal-detailskcal-details-mobile" >9,8 g</div>
+            </div>
+            <div>
+                <div class="margin-bottom margin-bottom-mobile-view"><b>Kohlenhydrate</b></div>
+                <div class="kcal-detailskcal-details-mobile" >1,2 g</div>
+            </div>
+            <div>
+                <div class="margin-bottom margin-bottom-mobile-view"><b>Fett</b></div>
+                <div class="kcal-details kcal-details-mobile" >48,6 g</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="prepare-container mobile-view-prepare">
+        <h3>Zubereitung</h3>
+        <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile" src="img/clock-3-16.png" alt=""></i>
+            30 Minuten
+        </span>
+        <span class="setup-infobar infobar-mobile-view"><i class="icons"><img class="icon-setup-mobile" src="img/clock-3-16.png" alt=""></i>
+            Gesamtzeit 60 Minuten
+        </span>
+        <div class="prepare-text prepare-text-mobile">
+            Backofen vorheizen, auf 170°C (Ober-/Unterhitze). Dann alle Nüsse kleinhacken und mit dem Zimt mischen. Die Auflaufform mit etwas flüssiger Butter bepinseln. Die Filoblätter in Form schneiden und auch etwas mit Butter bepinseln. Dann abwechseln Blätter und Nussmischung in der Auflaufform verteilen, bis alle Zutaten aufgebraucht sind.
+            Honig, Wasser und Zucker zu einem Sirup kochen und in die Form gießen, dann das Ganze backen (ca. 35min). Nach dem Abkühlen mit gehackten Pistazien garnieren.
+
+        </div>
+    </div>
+
+    <div class="profile-header mobile-view-heder">
+        <span class="header-profile-mobile"><b>Rezept erstellt von</b></span>
+    </div>
+    <div class="profile-name profile-name-mobile">
+        <img class="profile-img-setup profile-img-setup-mobile" src="img/doerte_foto.jpg" alt="">
+        <span class="name-margin-top-40 name-margin-top-40-mobile">Dörte</span>
+    </div>
+    
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+
+
+</html>

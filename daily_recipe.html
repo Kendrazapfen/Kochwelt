@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Rezept des Tages</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_media.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML(); baklava()">
+
+    <div class="template_mobile" w3-include-html="templates/header_daily_recipe.html"></div>
+
+    <div id="daily-recipe" class="daily-recipe daily-recipe-mobile">
+        <img id="recipe-image" class="img-mobile" src="img/croissant.jpg" alt="">
+        <div class="recipe recipe-container-mobile">
+            <h2 id="recipe-title"><b>Rezeptname</b></h2>
+            <p class="recipe-text-mobile" id="recipe-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro necessitatibus eligendi ad laborum
+                asperiores autem quos harum iste aspernatur voluptatum? Eveniet maiores, nihil ea veritatis nesciunt
+                minima temporibus ipsum magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit
+                quibusdam dolores eaque recusandae facere accusamus ducimus magni. Obcaecati vel laboriosam quasi dicta
+                dolorem autem necessitatibus facere aliquid! Quidem, facere.</p>
+            <a id="recipe-button" class="recipe-button recipe-button-mobbile" href="#">Rezept öffnen</a>
+        </div>
+    </div>
+
+    <div class="inspiring-recipe-segment inspiring-recipe-segment-mobile">
+        <h2 class="header-daily-recipe-mobile">Lust auf was Neues?</h2>
+        <div class="new-recipe-container new-recipe-container-mobile">
+            <div class="new-recipe">
+                <a href="baklava.html">
+                    <img class="new-recipe-mobile" src="img/sweets.jpg" alt="">
+                    <h3>Baklava</h3>
+                </a>
+            </div>
+            <div class="new-recipe">
+                <a href="bulgursalat.html">
+                    <img class="new-recipe-mobile" src="img/bulgur.jpg" alt="">
+                    <h3>Bulgursalat</h3>
+                </a>
+            </div>
+            <div class="new-recipe">
+                <a href="recipe-ufuk.html">
+                    <img class="new-recipe-mobile" src="img/kunefe.jpg" alt="">
+                    <h3>Künefe</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="compare-segment compare-segment-mobile">
+        
+        <div class="advertising advertising-mobile">Türkische Küche - Mehr als nur Döner Kebap!</div>
+
+        <div class="compare-container compare-container-mobile recipe-text-mobile">
+            <p>Die vielfältige türkische Küche wird normalerweise mit klassischen Gerichten wie Döner in Verbindung
+                gebracht, aber es gibt noch viele andere köstliche Gerichte wie Lahmacun, Börek und Pide, die auf
+                der Speisekarte nicht fehlen sollten. Lahmacun ist eine türkische Fladenbrotpizza mit Hackfleisch,
+                Gemüse und Gewürzen. Hier kann man zwischen regulären und scharfen Varianten wählen. Wer Pide macht, der
+                formt den Hefeteig wie ein kleines Schiff und kann es gerne mit Fleisch und/oder Käse überbacken. Börek
+                ist eine weitere Spezialität der türkischen Küche. Denn die Teigware ist ein Blätterteiggebäck, das
+                meist mit Käse und/oder Spinat gefüllt wird.</p>
+            <img class="last-img last-img-mobile" src="img/pide.jpg" alt="">
+        </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

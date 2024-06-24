@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_media.css">
+    <link rel="stylesheet" href="style_start.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header_contact.html"></div>
+
+    <div class="contact-form contact-form-mobile">
+        <h1>Kontakt <img class="email-icon email-icon-mobile" src="img/email-5-64.png" alt=""></h1>
+        <form action="https://gruppenarbeit-kochwelt-470.developerakademie.net/send_mail.php" method="post">
+            <h3>Name: <img class="asterisk" src="img/star-27-16.png" alt=""></h3>
+            <input class="imput-contact-mobile" title="Schreibe hier deinen Namen." name="name" type="text"
+                placeholder="Name" required>
+            <h3>Nachricht: <img class="asterisk" src="img/star-27-16.png" alt=""></h3>
+            <textarea class="text-contact-mobile" title="Schreibe hier deine Nachricht." name="message" id="" cols="30"
+                rows="10" placeholder="Nachricht" required></textarea>
+            <button class="button-contact-mobile" title="Sende deine Nachricht." type="submit">Senden</button>
+        </form>
+    </div>
+
+    <div class="call call-mobile">
+        <span class="horizontal-line horizontal-line-mobile">
+            <hr>
+            <h3>oder</h3>
+            <hr>
+        </span>
+        <span class="call-me-mobile">Rufe uns an unter</span>
+        <a class="mobile-number" title="Hier kannst du uns anrufen." href="tel:+49 (0) 123456789">+49 (0) 123456789</a>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>
